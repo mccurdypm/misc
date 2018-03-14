@@ -1,5 +1,7 @@
 #!bin/env python
 
+# https://leetcode.com/problems/fizz-buzz/description/
+
 def fizzbuzz(n):
     num_list = []
     for i in range(1, n + 1):
