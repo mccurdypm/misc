@@ -1,8 +1,8 @@
 #!/bin/env python
 
-x = -12
-y = 420
+# https://leetcode.com/problems/palindrome-number/description/
 
-for i in range(x, y):
-    if (i > 0) and (i == int(str(i)[:: -1])):
-        print i
+if x >= 0 and x == int(str(x)[:: -1]))
+    return True
+else:
+    return False
