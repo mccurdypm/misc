@@ -1,4 +1,4 @@
-#!bin/env python
+#!/bin/env python
 
 # https://leetcode.com/problems/fizz-buzz/description/
 
