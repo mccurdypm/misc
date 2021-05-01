@@ -5,7 +5,9 @@
 def fizzbuzz(n):
     num_list = []
     for i in range(1, n + 1):
-        if i % 3 == 0 and i % 5 == 0:
+        #if i % 3 == 0 and i % 5 == 0:
+        #use modulo 15
+        if i % 15 == 0:
             num_list.append('FizzBuzz')
         elif i % 3 == 0:
             num_list.append('Fizz')
