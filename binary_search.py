@@ -8,15 +8,16 @@ def search(self, nums, target):
         :type target: int
         :rtype: int
         """
-        left  = 0
+        left = 0
         right = len(nums) - 1
-        
         while left <= right:
-            midpoint = left + (right - left) // 2
+            midpoint = left + (right - left) //2
+            print 'midpoint: {}'.format(midpoint)
+            print nums[midpoint]
             if nums[midpoint] == target:
                 return midpoint
-            elif target < nums[midpoint]:
-                right = midpoint - 1
-            else:
+            elif nums[midpoint] < target:
                 left = midpoint + 1
-        return -1
+            else:
+                right = midpoint - 1
+        return midpoint
